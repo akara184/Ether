@@ -1,3 +1,3 @@
 # Some nice blogs
 
-(Xeiaso)[https://xeiaso.net/blog/]
+[Xeiaso](https://xeiaso.net/blog/)
