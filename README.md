@@ -1,2 +1,2 @@
 # Ether
-intellectual archive for humans 
+my intellectual archive for humans 
