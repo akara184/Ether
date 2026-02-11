@@ -5,7 +5,8 @@
 [Introduction to Type Theory](https://www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys)
 - **about Curried Functions:**
 [Curried Functions](https://www.youtube.com/watch?v=psmu_VAuiag)
-
+- **Type Theory in Computer Science, Linguistics, Logic:**
+[Type Theory in Computer Science, Linguistics, Logic](https://www.youtube.com/watch?v=TrYosPPCQAY)
 
 
 ## Enjoyable computer videos
