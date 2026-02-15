@@ -1,0 +1,424 @@
+#+TITLE: Arquivo Completo de Demonstração Org-mode
+#+EMAIL: exemplo@email.com
+#+DATE: 2026-02-13
+#+DESCRIPTION: Demonstração completa das funcionalidades do Org-mode
+#+KEYWORDS: org-mode, emacs, produtividade
+#+LANGUAGE: pt-BR
+#+STARTUP: overview
+#+TODO: TODO(t) PRÓXIMO(p) AGUARDANDO(a) | FEITO(f) CANCELADO(c)
+#+PRIORITIES: A C B
+#+TAGS: @trabalho(t) @casa(c) @estudo(e) urgente(u) projeto(p)
+#+PROPERTY: Effort_ALL 0:30 1:00 2:00 4:00 8:00
+#+COLUMNS: %40ITEM(Tarefa) %TODO %3PRIORITY %TAGS %17Effort(Esforço){:} %CLOCKSUM
+
+* Cabeçalhos e Hierarquia
+** Este é um cabeçalho de nível 2
+*** E este é nível 3
+**** Nível 4
+***** Nível 5
+****** Nível 6
+
+* Formatação de Texto
+** Estilos básicos
+- *Negrito*
+- /Itálico/
+- _Sublinhado_
+- =Código inline= 
+- ~Verbatim~
+- +Riscado+
+
+** Combinações
+- */Negrito e itálico/*
+- _/Sublinhado e itálico/_
+- *_Negrito e sublinhado_*
+
+* Listas
+** Lista não ordenada
+- Item 1
+- Item 2
+  - Subitem 2.1
+  - Subitem 2.2
+    - Sub-subitem 2.2.1
+- Item 3
+  + Usando símbolo +
+  + Outro item
+
+** Lista ordenada
+1. Primeiro item
+2. Segundo item
+   1. Subitem numerado
+   2. Outro subitem
+3. Terceiro item
+   a. Lista alfabética
+   b. Segundo item alfabético
+
+** Lista de definições
+- Org-mode :: Um modo de organização para Emacs
+- Emacs :: Editor de texto extensível
+- GNU :: Não é Unix
+
+** Lista de checklist
+- [ ] Tarefa não concluída
+- [-] Tarefa parcialmente concluída
+  - [X] Subtarefa concluída
+  - [ ] Subtarefa pendente
+- [X] Tarefa concluída
+
+* TODO Gerenciamento de Tarefas
+** TODO Tarefa simples a fazer
+** PRÓXIMO Tarefa que vou fazer em breve
+   SCHEDULED: <2026-02-14 Fri>
+** TODO Tarefa com prioridade [#A]
+** TODO Tarefa com deadline [#B]
+   DEADLINE: <2026-02-20 Thu>
+** AGUARDANDO Esperando resposta do cliente
+** TODO Tarefa com tags                                    :@trabalho:urgente:
+** FEITO Tarefa concluída
+   CLOSED: [2026-02-13 Thu 10:30]
+** CANCELADO Tarefa cancelada
+   CLOSED: [2026-02-13 Thu 11:00]
+
+* Agendamento e Prazos
+** TODO Reunião de equipe
+   SCHEDULED: <2026-02-15 Sat 14:00-15:30>
+   :PROPERTIES:
+   :LOCATION: Sala de Conferências
+   :END:
+
+** TODO Entregar relatório
+   DEADLINE: <2026-02-18 Tue>
+
+** TODO Evento recorrente semanal
+   <2026-02-14 Fri 09:00 +1w>
+
+** TODO Evento recorrente mensal
+   <2026-03-01 Sat +1m>
+
+* Timestamps e Datas
+- Data simples: <2026-02-13 Thu>
+- Intervalo de datas: <2026-02-13 Thu>--<2026-02-15 Sat>
+- Data e hora: <2026-02-13 Thu 14:30>
+- Intervalo de tempo: <2026-02-13 Thu 14:00-16:00>
+- Data inativa: [2026-02-13 Thu]
+- Timestamp com repetição: <2026-02-13 Thu +1w>
+
+* Clock e Controle de Tempo
+** TODO Tarefa com registro de tempo
+   :LOGBOOK:
+   CLOCK: [2026-02-13 Thu 09:00]--[2026-02-13 Thu 10:30] =>  1:30
+   CLOCK: [2026-02-12 Wed 14:00]--[2026-02-12 Wed 16:15] =>  2:15
+   :END:
+   :PROPERTIES:
+   :Effort:   4:00
+   :END:
+
+* Propriedades
+** Item com propriedades
+   :PROPERTIES:
+   :CUSTOM_ID: item-exemplo
+   :CREATED:  [2026-02-13 Thu]
+   :AUTHOR:   Claude
+   :VERSION:  1.0
+   :STATUS:   Em andamento
+   :END:
+
+* Links
+** Links externos
+- [[https://orgmode.org][Site oficial do Org-mode]]
+- [[mailto:exemplo@email.com][Enviar email]]
+- [[file:/caminho/para/arquivo.pdf][Documento PDF]]
+
+** Links internos
+- [[*Cabeçalhos e Hierarquia][Link para seção]]
+- [[#item-exemplo][Link por CUSTOM_ID]]
+
+** Imagens
+[[file:imagem.png]]
+
+* Tabelas
+** Tabela simples
+| Nome      | Idade | Cidade        |
+|-----------+-------+---------------|
+| Ana       |    28 | São Paulo     |
+| Bruno     |    35 | Rio de Janeiro|
+| Carolina  |    31 | Belo Horizonte|
+| Daniel    |    42 | Porto Alegre  |
+|-----------+-------+---------------|
+
+** Tabela com fórmulas
+| Produto   | Quantidade | Preço | Total |
+|-----------+------------+-------+-------|
+| Notebook  |          2 |  3500 |  7000 |
+| Mouse     |         10 |    50 |   500 |
+| Teclado   |          5 |   200 |  1000 |
+|-----------+------------+-------+-------|
+| Total     |         17 |       |  8500 |
+#+TBLFM: $4=$2*$3::@5$2=vsum(@2..@4)::@5$4=vsum(@2..@4)
+
+** Tabela com alinhamento
+|   <r> |   <c>   |   <l>   |
+| Direita | Centro | Esquerda |
+|       1 |    2    | 3        |
+|     100 |   200   | 300      |
+
+* Blocos de Código
+** Python
+#+BEGIN_SRC python
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+
+print([fibonacci(i) for i in range(10)])
+#+END_SRC
+
+** JavaScript
+#+BEGIN_SRC javascript
+const saudacao = (nome) => {
+    return `Olá, ${nome}!`;
+};
+
+console.log(saudacao("Mundo"));
+#+END_SRC
+
+** Shell/Bash
+#+BEGIN_SRC bash
+#!/bin/bash
+for i in {1..5}; do
+    echo "Contagem: $i"
+done
+#+END_SRC
+
+* Blocos Especiais
+** Exemplo
+#+BEGIN_EXAMPLE
+Isto é um bloco de exemplo
+Pode conter qualquer texto
+Sem formatação especial
+#+END_EXAMPLE
+
+** Quote (Citação)
+#+BEGIN_QUOTE
+"A imaginação é mais importante que o conhecimento."
+— Albert Einstein
+#+END_QUOTE
+
+** Verso
+#+BEGIN_VERSE
+As rosas são vermelhas,
+Violetas são azuis,
+Org-mode é incrível,
+E você também!
+#+END_VERSE
+
+** Centro
+#+BEGIN_CENTER
+Este texto está centralizado
+#+END_CENTER
+
+** Nota/Observação
+#+BEGIN_NOTE
+Esta é uma nota importante que você deve lembrar.
+#+END_NOTE
+
+** Aviso
+#+BEGIN_WARNING
+Cuidado! Esta operação não pode ser desfeita.
+#+END_WARNING
+
+* Footnotes (Notas de Rodapé)
+Este é um texto com uma nota de rodapé[fn:1].
+
+Você também pode usar notas inline[fn:: Esta é uma nota inline].
+
+Outra referência[fn:2].
+
+* Macros
+#+MACRO: data-atual (eval (format-time-string "%Y-%m-%d"))
+
+Data de hoje: {{{data-atual}}}
+
+* Includes (Inclusão de Arquivos)
+# Exemplo (comentado para não causar erro):
+# #+INCLUDE: "outro-arquivo.org"
+# #+INCLUDE: "codigo.py" src python
+
+* Diagramas e Drawers
+** Exemplo com drawer
+   :DRAWER_EXEMPLO:
+   Conteúdo dentro de um drawer
+   Pode ser ocultado/expandido
+   :END:
+
+   :PROPERTIES:
+   :CUSTOM_ID: exemplo-drawer
+   :END:
+
+* Exportação
+# Este arquivo pode ser exportado para:
+# - HTML (C-c C-e h h)
+# - LaTeX/PDF (C-c C-e l p)
+# - ODT (C-c C-e o o)
+# - Markdown (C-c C-e m m)
+# - ASCII (C-c C-e t A)
+
+* Agenda e Planejamento
+** TODO Projeto Grande                                            :projeto:
+*** TODO Fase 1: Planejamento
+    SCHEDULED: <2026-02-14 Fri>
+    :PROPERTIES:
+    :Effort:   8:00
+    :END:
+*** TODO Fase 2: Desenvolvimento
+    SCHEDULED: <2026-02-21 Fri>
+*** TODO Fase 3: Testes
+    SCHEDULED: <2026-02-28 Fri>
+*** TODO Fase 4: Lançamento
+    DEADLINE: <2026-03-07 Fri>
+
+* Capturas e Anotações Rápidas
+** Ideias
+*** Ideia para novo projeto
+    [2026-02-13 Thu 10:15]
+    Criar um sistema de gerenciamento...
+
+** Anotações de Reunião
+*** Reunião com cliente - 2026-02-13
+    - Participantes: Ana, Bruno, Cliente X
+    - Tópicos discutidos:
+      1. Requisitos do projeto
+      2. Cronograma
+      3. Orçamento
+
+* Arquivos e Anexos
+# Links para arquivos locais
+- [[file:~/Documentos/relatorio.pdf][Relatório Anual]]
+- [[file:./imagens/grafico.png][Gráfico de Vendas]]
+
+* Comentários
+# Este é um comentário de linha
+
+#+BEGIN_COMMENT
+Este é um bloco de comentário
+Pode ter múltiplas linhas
+Não será exportado
+#+END_COMMENT
+
+* Estatísticas e Cookies
+** Projeto com progresso [33%]
+- [X] Tarefa 1
+- [ ] Tarefa 2
+- [ ] Tarefa 3
+
+** Projeto com contador [1/3]
+- [X] Tarefa A
+- [ ] Tarefa B
+- [ ] Tarefa C
+
+* Tabelas Dinâmicas e Cálculos
+** Orçamento Mensal
+| Categoria      | Janeiro | Fevereiro | Março | Total | Média |
+|----------------+---------+-----------+-------+-------+-------|
+| Alimentação    |    1200 |      1350 |  1180 |  3730 |  1243 |
+| Transporte     |     450 |       420 |   480 |  1350 |   450 |
+| Moradia        |    2000 |      2000 |  2000 |  6000 |  2000 |
+| Entretenimento |     300 |       450 |   280 |  1030 |   343 |
+|----------------+---------+-----------+-------+-------+-------|
+| Total          |    3950 |      4220 |  3940 | 12110 |  4037 |
+#+TBLFM: $5=vsum($2..$4)::$6=vmean($2..$4);%.0f::@6$2=vsum(@2..@5)::@6$3=vsum(@2..@5)::@6$4=vsum(@2..@5)::@6$5=vsum(@2..@5)::@6$6=vmean(@2..@5);%.0f
+
+* Referências e Bibliografia
+** Citações
+- Cite: cite:knuth1984
+- Citação completa: [[cite:knuth1984]]
+
+* Tags Especiais e Estados
+** NEXT Tarefa importante              :@trabalho:urgente:@estudo:
+   SCHEDULED: <2026-02-14 Fri>
+   :PROPERTIES:
+   :Effort:   2:00
+   :END:
+
+* Estruturas Aninhadas Complexas
+** Projeto: Sistema de Gestão                                     :projeto:
+*** TODO Análise de Requisitos [0/3]
+    SCHEDULED: <2026-02-14 Fri>
+**** TODO Entrevistar stakeholders
+     DEADLINE: <2026-02-16 Sun>
+**** TODO Documentar requisitos funcionais
+**** TODO Documentar requisitos não-funcionais
+*** TODO Design
+**** TODO Arquitetura do sistema
+**** TODO Design de interface
+
+* Notas de Rodapé (Definições)
+[fn:1] Esta é a primeira nota de rodapé com mais detalhes sobre o tópico.
+
+[fn:2] Segunda nota de rodapé com informações adicionais importantes.
+
+* Configurações Adicionais do Documento
+#+OPTIONS: toc:2          (índice com 2 níveis)
+#+OPTIONS: num:t          (numeração de seções)
+#+OPTIONS: H:4            (4 níveis de cabeçalho)
+#+OPTIONS: ^:nil          (desabilitar superscript)
+#+OPTIONS: todo:t         (incluir TODOs na exportação)
+#+OPTIONS: tags:t         (incluir tags)
+#+OPTIONS: pri:t          (incluir prioridades)
+#+OPTIONS: ':t            (usar smart quotes)
+#+OPTIONS: timestamp:t    (incluir timestamps)
+.........
+
+//////// i need to underst why latex isnt working in this field t-t
+* LaTeX e Fórmulas Matemáticas
+
+** Fórmula inline
+
+A fórmula de Bhaskara é: \( x = \frac{-b \pm \sqrt{b^2-4ac}}{2a} \)
+
+** Fórmula em bloco
+\[
+E = mc^2
+\]
+
+\[
+\int_{0}^{\infty} e^{-x^2} dx = \frac{\sqrt{\pi}}{2}
+\]
+
+* Mapa Mental / Estrutura
+#+BEGIN_SRC plantuml :file diagrama.png
+@startmindmap
+* Org-mode
+** Organização
+*** TODOs
+*** Agendas
+*** Tags
+** Escrita
+*** Formatação
+*** Exportação
+*** LaTeX
+** Programação
+*** Blocos de código
+*** Literate programming
+*** Babel
+@endmindmap
+#+END_SRC
+
+* Conclusão
+Este arquivo demonstra as principais funcionalidades do Org-mode:
+- ✓ Hierarquia de cabeçalhos
+- ✓ Formatação de texto
+- ✓ Listas e checklists
+- ✓ Gerenciamento de tarefas (TODO)
+- ✓ Agendamento e prazos
+- ✓ Controle de tempo (clocking)
+- ✓ Propriedades
+- ✓ Links e referências
+- ✓ Tabelas com cálculos
+- ✓ Blocos de código
+- ✓ Blocos especiais
+- ✓ Notas de rodapé
+- ✓ Tags e prioridades
+- ✓ Fórmulas matemáticas
+- ✓ E muito mais!
+
+# Fim do arquivo

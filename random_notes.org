@@ -1,0 +1,41 @@
+#+TITLE: SOME RANDOM THOUGHTS ABOUT *******
+
+
+* Some thoughts about C and C++ pointers
+** C++ and C, difference of & and *
+
+- & -> "the address of"
+- * -> "what's at
+
+#+begin_src C++ 
+  int x;    // Declares x as having type int.
+  int y;    // Declares y as having type int.
+  int *p;   // Declares *p as having type int, which means that p has type pointer-to-int.
+
+  p = &x;   // Uses & to get a pointer to x, and stores it in p. p now contains the value &x.
+            // We say that "p points to x". In other words, *p is x.
+  x = 10;   // Sets the value of the variable x to be 10.
+  y = *p;   // Gets the value 10 from x through the pointer p and stores in y. y is now 10.
+  ,*p = 42; // x is now 42, and y is still 10.
+  p = &y;   // Set p to point to y instead. *p is now y.
+  x = *p;   // x is now 10 again.
+#+end_src
+
+#+begin_src C++
+int numero = 100;
+int *ponteiro = &numero;
+
+cout << numero;        // Output: 100
+cout << &numero;       // Output: 0x7fff5fbff6ac (endereço)
+cout << ponteiro;      // Output: 0x7fff5fbff6ac (mesmo endereço)
+cout << *ponteiro;     // Output: 100 (valor no endereço)n
+#+end_src
+* Some thoughts about curried function and high-order function
+ - A *higher-order* function is simply a function that takes a function as an
+   argument or returns a function as a result, and /it may or may not be curried/.
+ - A curried function, on the other hand, is one that /returns/ a function as its result
+* Some thoughts about \to
+A \to B 
+Existe uma função que transforma valores do tipo A
+em valores do tipo B.
+
