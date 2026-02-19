@@ -6,7 +6,9 @@
 - **about Curried Functions:**
 [Curried Functions](https://www.youtube.com/watch?v=psmu_VAuiag)
 - **Type Theory in Computer Science, Linguistics, Logic:**
-[Type Theory in Computer Science, Linguistics, Logic](https://www.youtube.com/watch?v=TrYosPPCQAY)
+[Type Theory in Computer Science, Linguistics, Logic](https://www.youtube.com/watch?v=TrYosPPCQAY) 
+- **notes to type theory by brazilian hanneli**
+[Notes on type theory by Hanneli(br)](https://www.youtube.com/watch?v=AJ-yQEfvdVc&t=269s)
 
 
 ## Enjoyable computer videos
