@@ -24,6 +24,10 @@ p = &y;   // Set p to point to y instead. *p is now y.
 x = *p;   // x is now 10 again.
 
 
+### C++ headers and cmake
+    - For gcc users:  Using g++, you can use the -I option to specify an alternate include directory:
+    g++ -o main -I./source/includes main.cpp
+    There is no space after the -I. For a full path (rather than a relative path), remove the . after -I.
 ### Notes about morphism
 
 - Morphism:
@@ -67,10 +71,14 @@ Se você tiver um conjunto e uma operação que é associativa, mas NÃO tem um 
 
 
 
-
+ 
 ### Data and Codata
     - https://stackoverflow.com/questions/28841260/what-is-the-difference-between-codata-and-data#29455156
     - https://gemini.google.com/share/9b805098869a
+
+### Compilers/interpreter
+#### Syntax and Semantic erros
+     - https://www.learncpp.com/cpp-tutorial/syntax-and-semantic-errors/
 
 ### Unite types:
     - In the area of mathematical logic and computer science known as type theory, a unit type is a type that allows only one value (and thus can hold no information). The carrier (underlying set) associated with a unit type can be any singleton set. There is an isomorphism between any two such sets, so it is customary to talk about the unit type and ignore the details of its value. One may also regard the unit type as the type of 0-tuples, i.e. the product of no types. https://en.wikipedia.org/wiki/Unit_type
