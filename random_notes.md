@@ -79,7 +79,7 @@ Se você tiver um conjunto e uma operação que é associativa, mas NÃO tem um 
 ### Compilers/interpreter
 #### Syntax and Semantic erros
      - https://www.learncpp.com/cpp-tutorial/syntax-and-semantic-errors/
-
+    
 ### Unite types:
     - In the area of mathematical logic and computer science known as type theory, a unit type is a type that allows only one value (and thus can hold no information). The carrier (underlying set) associated with a unit type can be any singleton set. There is an isomorphism between any two such sets, so it is customary to talk about the unit type and ignore the details of its value. One may also regard the unit type as the type of 0-tuples, i.e. the product of no types. https://en.wikipedia.org/wiki/Unit_type
 
