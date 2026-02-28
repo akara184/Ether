@@ -5,12 +5,11 @@
 - Currying: 
   - Why bother with uncurrying function(There are some optimization ??)
 
-### C++ and C, difference of `&` and `*`
+### C++ and C, difference of & and *
 
-- `&` -> "the address of"
-- `*` -> "what's at"
+- & -> "the address of"
+- * -> "what's at"
 
-```cpp
 int x;    // Declares x as having type int.
 int y;    // Declares y as having type int.
 int *p;   // Declares *p as having type int, which means that p has type pointer-to-int.
@@ -27,7 +26,7 @@ x = *p;   // x is now 10 again.
 ### C++ headers and cmake
     - For gcc users:  Using g++, you can use the -I option to specify an alternate include directory:
     g++ -o main -I./source/includes main.cpp
-    There is no space after the -I. For a full path (rather than a relative path), remove the . after -I.
+        There is no space after the -I. For a full path (rather than a relative path), remove the . after -I.
 ### Notes about morphism
 
 - Morphism:
