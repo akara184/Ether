@@ -1,48 +1,48 @@
 
 
 
-*** ytb
-  - [[https//www.youtube.com/@K4YL4CK/videos][Canal K4YL4CK]]
-  - [[https//www.youtube.com/@neoeno4242][Canal neoeno4242]]
-  - [[https//www.youtube.com/@audiodevcon/videos][Canal audiodevcon]]
-  - [[https//www.youtube.com/@dpacarana][Canal Abel Cirilo]]
-  - [[https//www.youtube.com/watch?v=y4SUfS9ymBU][How Enemies Detect You in Dark Souls Part 2 - Smell]]
-  - [[https//www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys][Introduction to Type Theory]]
-  - [[https//www.youtube.com/watch?v=psmu_VAuiag][Curried Functions]]
-  - [[https//www.youtube.com/watch?v=TrYosPPCQAY][Type Theory in Computer Science, Linguistics, Logic]]
-  - [[https//www.youtube.com/watch?v=AJ-yQEfvdVc&t=269s][Notes on type theory by Hannel]]
-  - [[https//www.youtube.com/watch?v=VxINoKFm-S4]["A Little Taste of Dependent Types"]]
-  - [[https//www.youtube.com/watch?v=psvoT8LuBa4][why I'm writing an operating system + software as art]]
-  - [[https//youtu.be/4_KgjfmoQgk][Viewer sent me a broken C64 board - Can I fix it?]]
-  - [[https//youtu.be/I-_rjwyiHQI?si=WAVxp8AypdMf1m0_][The First Necromancer - How a Medieval Sorcerer Combined Astrology & Black Magic]]
-  - [[https//www.youtube.com/watch?v=BfEvIjTQkIE][How do computer works?]]
-  - [[https//www.youtube.com/watch?v=At82nIP-DKM][leechplus music]]
-  - [[https//youtu.be/XGCdmxaiKx4][Julie at Outbreak Fest Manchester 2025]]
-  - [[https//www.youtube.com/watch?v=M-S0Glketbo][Lucia e clovis no podcast alma]]
-  - [[https//www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys][Introduction to Type Theory (playlist)]]
+*** :ytb:
+  - [[https://www.youtube.com/@K4YL4CK/videos][Canal: K4YL4CK]]
+  - [[https://www.youtube.com/@neoeno4242][Canal: neoeno4242]]
+  - [[https://www.youtube.com/@audiodevcon/videos][Canal: audiodevcon]]
+  - [[https://www.youtube.com/@dpacarana][Canal: Abel Cirilo]]
+  - [[https://www.youtube.com/watch?v=y4SUfS9ymBU][How Enemies Detect You in Dark Souls: Part 2 - Smell]]
+  - [[https://www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys][Introduction to Type Theory]]
+  - [[https://www.youtube.com/watch?v=psmu_VAuiag][Curried Functions]]
+  - [[https://www.youtube.com/watch?v=TrYosPPCQAY][Type Theory in Computer Science, Linguistics, Logic]]
+  - [[https://www.youtube.com/watch?v=AJ-yQEfvdVc&t=269s][Notes on type theory by Hannel]]
+  - [[https://www.youtube.com/watch?v=VxINoKFm-S4]["A Little Taste of Dependent Types"]]
+  - [[https://www.youtube.com/watch?v=psvoT8LuBa4][why I'm writing an operating system + software as art]]
+  - [[https://youtu.be/4_KgjfmoQgk][Viewer sent me a broken C64 board - Can I fix it?]]
+  - [[https://youtu.be/I-_rjwyiHQI?si=WAVxp8AypdMf1m0_][The First Necromancer - How a Medieval Sorcerer Combined Astrology & Black Magic]]
+  - [[https://www.youtube.com/watch?v=BfEvIjTQkIE][How do computer works?]]
+  - [[https://www.youtube.com/watch?v=At82nIP-DKM][leechplus music]]
+  - [[https://youtu.be/XGCdmxaiKx4][Julie at Outbreak Fest Manchester 2025]]
+  - [[https://www.youtube.com/watch?v=M-S0Glketbo][Lucia e clovis no podcast alma]]
+  - [[https://www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys][Introduction to Type Theory (playlist)]]
 
     
-*** wiki
-  - [[https//en.wikipedia.org/wiki/Hungarian_notation][hungarian_notation]]
-  - [[https//hyperpolyglot.org/lisp][lisp]]
-  - [[https//pt.wikipedia.org/wiki/Leis_do_pensamento][Leis do pensamento]]
-  - [[https//pt.wikipedia.org/wiki/Heur%C3%ADstica][Heurística]]
-  - [[https//en.wikipedia.org/wiki/Maximal_munch][Maximal munch]]
-  - [[https//wiki.c2.com/?BiotaLanguage][Biota Language - C2 Wiki]]
-  - [[http//wiki.c2.com/][Welcome Visitors - C2 Wiki]]
-  - [[https//mathoverflow.net/questions/330873/good-introductory-book-to-type-theory][Good introductory book to type theory? - MathOverflow]]
-  - [[https//learn-anything.xyz/dependent-types][Dependent Types - Learn Anything]]
+*** :wiki:
+  - [[https://en.wikipedia.org/wiki/Hungarian_notation][hungarian_notation]]
+  - [[https://hyperpolyglot.org/lisp][lisp]]
+  - [[https://pt.wikipedia.org/wiki/Leis_do_pensamento][Leis do pensamento]]
+  - [[https://pt.wikipedia.org/wiki/Heur%C3%ADstica][Heurística]]
+  - [[https://en.wikipedia.org/wiki/Maximal_munch][Maximal munch]]
+  - [[https://wiki.c2.com/?BiotaLanguage][Biota Language - C2 Wiki]]
+  - [[http://wiki.c2.com/][Welcome Visitors - C2 Wiki]]
+  - [[https://mathoverflow.net/questions/330873/good-introductory-book-to-type-theory][Good introductory book to type theory? - MathOverflow]]
+  - [[https://learn-anything.xyz/dependent-types][Dependent Types - Learn Anything]]
 
 
-*** wikidoc
-  - [[https//gitlab.freedesktop.org/pipewire/pipewire/-/wikis/FAQ][wiki pipewire]]
-  - [[https//agda.readthedocs.io/en/latest/getting-started/installation.html][Agda - Installation]]
-  - [[https//github.com/stumpwm/stumpwm/wiki][StumpWM Wiki]]
+*** :wiki:doc:
+  - [[https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/FAQ][wiki pipewire]]
+  - [[https://agda.readthedocs.io/en/latest/getting-started/installation.html][Agda - Installation]]
+  - [[https://github.com/stumpwm/stumpwm/wiki][StumpWM Wiki]]
 
     
-*** article
-  - [[https//pixelcluster.github.io/Mesa-26/][Inside Mesa 26.0's RADV RT improvements]]
-  - [[https//www.jamescherti.com/essential-emacs-packages/][essential-emacs-packages]]
+*** :article:
+  - [[https://pixelcluster.github.io/Mesa-26/][Inside Mesa 26.0's RADV RT improvements]]
+  - [[https://www.jamescherti.com/essential-emacs-packages/][essential-emacs-packages]]
   - [[https://www.raptitude.com/2025/12/maybe-the-default-settings-are-too-high/][maybe-the-default-settings-are-too-high]]
   - [[https://pinyin.info/readings/texts/moser.html][pinyin.info]]
   - [[https://ratfactor.com/ascetic-computing][Ascetic Computing]]
@@ -58,40 +58,40 @@
   - [[https://mohitmishra786.github.io/UnderTheHood/][Under the Hood - how things works]]
   - [[https://haqr.eu/tinycompiler/][Playing with code - Tiny Compiler]]
   - [[https://huggingface.co/blog/ngxson/make-your-own-rag][Code a simple RAG from scratch]]
-  - [[https//www.scotthyoung.com/blog/2019/04/24/working-memory/][Working Memory A Complete Guide - Scott H Young]]
-  - [[https//desmolysium.com/vitality/#supplements][How I Biohack My Vitality - Desmolysium]]
-  - [[https//blog.avas.space/you-can-stick-with-it/][you can stick with it ]]
-  - [[https//tugbakibar.pro/think-until-you-can-think-no-more-new/][think until you can think no more]]
+  - [[https://www.scotthyoung.com/blog/2019/04/24/working-memory/][Working Memory: A Complete Guide - Scott H Young]]
+  - [[https://desmolysium.com/vitality/#supplements][How I Biohack My Vitality - Desmolysium]]
+  - [[https://blog.avas.space/you-can-stick-with-it/][you can stick with it ]]
+  - [[https://tugbakibar.pro/think-until-you-can-think-no-more-new/][think until you can think no more]]
 
     
-*** blog
-  - [[https//lambdaland.org/][lambdaland.org]]
-  - [[https//phrack.org/news][phra2ck.org]]
-  - [[https//acid.vegas/blog/][acid.vegas]]
-  - [[https//news.colonq.computer/][news.colonq.computer]]
-  - [[https//xeiaso.net/blog/][Xeiaso]]
-  - [[https//hannelita.com/][brazilian girl called hannelitaaa]]
-  - [[https//mozartsempiano.com/home][Mozart site lindo]]
-  - [[https//www.exodrifter.space/][Stranger Cat blog]]
-  - [[https//computaria.gitlab.io/blog/][Blog do coelho]]
-  - [[https//noghartt.dev/][noghartt.dev]]
-  - [[https//exitlife.xyz/#][exitlife.xyz]]
-  - [[https//www.bosontreinamentos.com.br/][bosontreinamentos]]
-  - [[https//matt.might.net/articles/][Matt Might's blog]]
-  - [[https//blog.dunossauro.com/][Dunossauro]]
-  - [[https//tennojim.xyz/feed?include=ALL&exclude=NONE&page=0][tennojim]]
-  - [[http//blog.avas.space/feed
+*** :blog:
+  - [[https://lambdaland.org/][lambdaland.org]]
+  - [[https://phrack.org/news][phra2ck.org]]
+  - [[https://acid.vegas/blog/][acid.vegas]]
+  - [[https://news.colonq.computer/][news.colonq.computer]]
+  - [[https://xeiaso.net/blog/][Xeiaso]]
+  - [[https://hannelita.com/][brazilian girl called hannelitaaa]]
+  - [[https://www.exodrifter.space/][Stranger Cat blog]]
+  - [[https://mozartsempiano.com/home][Mozart site lindo]]
+  - [[https://computaria.gitlab.io/blog/][Blog do coelho]]
+  - [[https://noghartt.dev/][noghartt.dev]]
+  - [[https://exitlife.xyz/#][exitlife.xyz]]
+  - [[https://www.bosontreinamentos.com.br/][bosontreinamentos]]
+  - [[https://matt.might.net/articles/][Matt Might's blog]]
+  - [[https://blog.dunossauro.com/][Dunossauro]]
+  - [[https://tennojim.xyz/feed?include=ALL&exclude=NONE&page=0][tennojim]]
+  - [[http://blog.avas.space/feed
 ][ava1's blog ]]
-  - [[https//tilde.town/~vilmibm/][tilde - blog lindo]]
+  - [[https://tilde.town/~vilmibm/][tilde - blog lindo]]
 
-*** screwdriver
-- [[https//godbolt.org/][Compiler Explorer (Godbolt)]]
-- [[https//visualgo.net/en][VisuAlgo - Data Structures Visualization]]
-- [[https//www.sortvisualizer.com/quicksort/][Sort Visualizer - Quick Sort]]
-- [[https//deepwiki.com/][DeepWiki - AI docs for every repo]]
-- [[https//0de5.net/explore][0DE5 Explore]]
-- [[https//fmhy.net/][freemediaheckyeah]]
-- [[https//rentry.co/good-sites#alternative-search-engines][/g/'s Good Sites]]
+*** :screwdriver:
+- [[https://godbolt.org/][Compiler Explorer (Godbolt)]]
+- [[https://visualgo.net/en][VisuAlgo - Data Structures Visualization]]
+- [[https://www.sortvisualizer.com/quicksort/][Sort Visualizer - Quick Sort]]
+- [[https://deepwiki.com/][DeepWiki - AI docs for every repo]]
+- [[https://0de5.net/explore][0DE5 Explore]]
+- [[https://fmhy.net/][freemediaheckyeah]]
+- [[https://rentry.co/good-sites#alternative-search-engines][/g/'s Good Sites]]
 
   
-*** misc
+*** :misc:
