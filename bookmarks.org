@@ -81,8 +81,7 @@
   - [[https://matt.might.net/articles/][Matt Might's blog]]
   - [[https://blog.dunossauro.com/][Dunossauro]]
   - [[https://tennojim.xyz/feed?include=ALL&exclude=NONE&page=0][tennojim]]
-  - [[http://blog.avas.space/feed
-][ava1's blog ]]
+  - [[http://blog.avas.space/feed][ava1's blog]]
   - [[https://tilde.town/~vilmibm/][tilde - blog lindo]]
     
 ** screwdriver
