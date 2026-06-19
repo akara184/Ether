@@ -1,0 +1,48 @@
+#+TITLE: Crafting Interpreters — Study notes
+#+STARTUP: overview
+
+
+
+
+* Progresso Geral
+#+BEGIN: columnview :hlines 1 :id global
+#+END:
+
+| Parte | Cap | Título                    | Status     | Data       |
+|-------+-----+---------------------------+------------+------------|
+| I     |   4 | Scanning       dadadadadadada | [ ] todo   |            |
+| I     |   5 | Representing Code         | [ ] todo   |            |
+| I     |   6 | Parsing Expressions       | [ ] todo   |            |
+| I     |   7 | Evaluating Expressions    | [ ] todo   |            |
+| I     |   8 | Statements and State      | [ ] todo   |            |
+| I     |   9 | Control Flow              | [ ] todo   |            |
+| I     |  10 | Functions                 | [ ] todo   |            |
+| I     |  11 | Resolving and Binding     | [ ] todo   |            |
+| I     |  12 | Classes                   | [ ] todo   |            |
+| I     |  13 | Inheritance               | [ ] todo   |            |
+| II    |  14 | Chunks of Bytecode        | [ ] todo   |            |
+| II    |  15 | A Virtual Machine         | [ ] todo   |            |
+| II    |  16 | Scanning on Demand        | [ ] todo   |            |
+| II    |  17 | Compiling Expressions     | [ ] todo   |            |
+| II    |  18 | Types of Values           | [ ] todo   |            |
+| II    |  19 | Strings                   | [ ] todo   |            |
+| II    |  20 | Hash Tables               | [ ] todo   |            |
+| II    |  21 | Global Variables          | [ ] todo   |            |
+| II    |  22 | Local Variables           | [ ] todo   |            |
+| II    |  23 | Jumping Back and Forth    | [ ] todo   |            |
+| II    |  24 | Calls and Functions       | [ ] todo   |            |
+| II    |  25 | Closures                  | [ ] todo   |            |
+| II    |  26 | Garbage Collection        | [ ] todo   |            |
+| II    |  27 | Classes and Instances     | [ ] todo   |            |
+| II    |  28 | Methods and Initializers  | [ ] todo   |            |
+| II    |  29 | Superclasses              | [ ] todo   |            |
+| II    |  30 | Optimization              | [ ] todo   |            |
+
+
+
+
+* Useful links
+- [[https://craftinginterpreters.com][book website]]
+- [[https://github.com/munificent/craftinginterpreters][github repo]]
+- [[https://github.com/munificent/craftinginterpreters/tree/master/java][java code(jlox)]]
+- [[https://github.com/munificent/craftinginterpreters/tree/master/c][C code (clox)]]

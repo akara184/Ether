@@ -1,0 +1,30 @@
+#+TITLE: Randomes notes about compilers/interpreters 
+
+
+** Random notes:
+
+- This ability for =operators= to change their behavior based on the type of the arguments leverages a feature called /operator overloading/.  
+- [[https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form][BNF]] stands for =Backus Naur Form= /notation/. It is a formal method for describing the syntax of programming language which is understood as Backus Naur Formas introduced by John Bakus and Peter Naur in 1960. 
+- /A compiler reads files in one language, translates them, and outputs files in another language/. You can implement a compiler in any language, including the same language it compiles, a process called =self-hosting=.
+- You can’t compile your compiler using itself yet, but if you have another compiler for your language written in some other language, you use that one to compile your compiler once. Now you can /use the compiled version of your own compiler to compile future versions of itself/, and you can discard the original one compiled from the other compiler. This is called =bootstrapping=.
+  - 
+** Operator precedence
+  - At compile time, the compiler must parse the expression and determine how operands are grouped with operators.
+  This is done via the precedence and associativity rules, which we’ll discuss momentarily.
+  - At compile time or runtime, the operands are evaluated and operations executed to produce a result.
+    
+*** Operator precedence
+ * To assist with parsing a compound expression, all operators are assigned a level of precedence. 
+ * Operators with a higher precedence level are grouped with operands first.
+ * You can see in the table below that multiplication and division (precedence level 5) have a higher precedence level than addition and subtraction (precedence level 6). Thus, multiplication and division will be grouped with operands before addition and subtraction. In other words, 4 + 2 * 3 will be grouped as 4 + (2 * 3).
+*** Operator associativity
+ * Consider a compound expression like 7 - 4 - 1. Should this be grouped as (7 - 4) - 1 which evaluates to 2, or 7 - (4 - 1), which evaluates to 4? Since both subtraction operators have the same precedence level, the compiler can not use precedence alone to determine how this should be grouped.
+ * If two operators with the same precedence level are adjacent to each other in an expression, the operator’s associativity tells the compiler whether to evaluate the operators (not the operands!) from left to right or from right to left. Subtraction has precedence level 6, and the operators in precedence level 6 have an associativity of left to right. So this expression is grouped from left to right: (7 - 4) - 1.
+
+   * Due to the precedence rules, 4 + 2 * 3 will be grouped as 4 + (2 * 3). But what if we actually meant (4 + 2) * 3? Just like in normal mathematics, in C++ we can explicitly use parentheses to set the grouping of operands as we desire. This works because parentheses have one of the highest precedence levels, so parentheses generally evaluate before whatever is inside them
+
+     /Evaluation of operands/
+   * The C++ standard (mostly) uses the term evaluation to refer to the evaluation of operands (not the evaluation of operators or expressions!). For example, given expression a + b, a will be evaluated to produce some value, and b will be evaluated to produce some value. These values can be then used as operands to operator+ for value computation.
+
+     /GCC x Clang/
+    * The Clang compiler evaluates arguments in *left-to-right order*. The GCC compiler evaluates arguments in *right-to-left order*.
