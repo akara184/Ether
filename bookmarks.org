@@ -61,7 +61,7 @@
   - [[https://huggingface.co/blog/ngxson/make-your-own-rag][Code a simple RAG from scratch]]
   - [[https://www.scotthyoung.com/blog/2019/04/24/working-memory/][Working Memory: A Complete Guide - Scott H Young]]
   - [[https://desmolysium.com/vitality/#supplements][How I Biohack My Vitality - Desmolysium]]
-  - [[https://blog.avas.space/you-can-stick-with-it/][you can stick with it ]]
+  - [[https://blog.avas.space/you-can-stick-with-it/][you can stick with it]]
   - [[https://tugbakibar.pro/think-until-you-can-think-no-more-new/][think until you can think no more]]
 
 ** blog    
