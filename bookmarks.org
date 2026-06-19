@@ -1,6 +1,7 @@
 
 
 
+** ytb
 *** :ytb:
   - [[https://www.youtube.com/@K4YL4CK/videos][Canal: K4YL4CK]]
   - [[https://www.youtube.com/@neoeno4242][Canal: neoeno4242]]
@@ -21,7 +22,7 @@
   - [[https://www.youtube.com/watch?v=M-S0Glketbo][Lucia e clovis no podcast alma]]
   - [[https://www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys][Introduction to Type Theory (playlist)]]
 
-    
+** wiki    
 *** :wiki:
   - [[https://en.wikipedia.org/wiki/Hungarian_notation][hungarian_notation]]
   - [[https://hyperpolyglot.org/lisp][lisp]]
@@ -33,13 +34,13 @@
   - [[https://mathoverflow.net/questions/330873/good-introductory-book-to-type-theory][Good introductory book to type theory? - MathOverflow]]
   - [[https://learn-anything.xyz/dependent-types][Dependent Types - Learn Anything]]
 
-
+** wiki doc
 *** :wiki:doc:
   - [[https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/FAQ][wiki pipewire]]
   - [[https://agda.readthedocs.io/en/latest/getting-started/installation.html][Agda - Installation]]
   - [[https://github.com/stumpwm/stumpwm/wiki][StumpWM Wiki]]
 
-    
+** article    
 *** :article:
   - [[https://pixelcluster.github.io/Mesa-26/][Inside Mesa 26.0's RADV RT improvements]]
   - [[https://www.jamescherti.com/essential-emacs-packages/][essential-emacs-packages]]
@@ -63,7 +64,7 @@
   - [[https://blog.avas.space/you-can-stick-with-it/][you can stick with it ]]
   - [[https://tugbakibar.pro/think-until-you-can-think-no-more-new/][think until you can think no more]]
 
-    
+** blog    
 *** :blog:
   - [[https://lambdaland.org/][lambdaland.org]]
   - [[https://phrack.org/news][phra2ck.org]]
@@ -83,7 +84,8 @@
   - [[http://blog.avas.space/feed
 ][ava1's blog ]]
   - [[https://tilde.town/~vilmibm/][tilde - blog lindo]]
-
+    
+** screwdriver
 *** :screwdriver:
 - [[https://godbolt.org/][Compiler Explorer (Godbolt)]]
 - [[https://visualgo.net/en][VisuAlgo - Data Structures Visualization]]
@@ -93,5 +95,5 @@
 - [[https://fmhy.net/][freemediaheckyeah]]
 - [[https://rentry.co/good-sites#alternative-search-engines][/g/'s Good Sites]]
 
-  
+** misc  
 *** :misc:
