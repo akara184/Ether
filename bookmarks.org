@@ -3,10 +3,6 @@
 
 ** ytb
 *** :ytb:
-  - [[https://www.youtube.com/@K4YL4CK/videos][Canal: K4YL4CK]]
-  - [[https://www.youtube.com/@neoeno4242][Canal: neoeno4242]]
-  - [[https://www.youtube.com/@audiodevcon/videos][Canal: audiodevcon]]
-  - [[https://www.youtube.com/@dpacarana][Canal: Abel Cirilo]]
   - [[https://www.youtube.com/watch?v=y4SUfS9ymBU][How Enemies Detect You in Dark Souls: Part 2 - Smell]]
   - [[https://www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys][Introduction to Type Theory]]
   - [[https://www.youtube.com/watch?v=psmu_VAuiag][Curried Functions]]
@@ -21,7 +17,7 @@
   - [[https://youtu.be/XGCdmxaiKx4][Julie at Outbreak Fest Manchester 2025]]
   - [[https://www.youtube.com/watch?v=M-S0Glketbo][Lucia e clovis no podcast alma]]
   - [[https://www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys][Introduction to Type Theory (playlist)]]
-
+    
 ** wiki    
 *** :wiki:
   - [[https://en.wikipedia.org/wiki/Hungarian_notation][hungarian_notation]]
@@ -33,13 +29,10 @@
   - [[http://wiki.c2.com/][Welcome Visitors - C2 Wiki]]
   - [[https://mathoverflow.net/questions/330873/good-introductory-book-to-type-theory][Good introductory book to type theory? - MathOverflow]]
   - [[https://learn-anything.xyz/dependent-types][Dependent Types - Learn Anything]]
-
-** wiki doc
-*** :wiki:doc:
   - [[https://gitlab.freedesktop.org/pipewire/pipewire/-/wikis/FAQ][wiki pipewire]]
   - [[https://agda.readthedocs.io/en/latest/getting-started/installation.html][Agda - Installation]]
   - [[https://github.com/stumpwm/stumpwm/wiki][StumpWM Wiki]]
-
+    
 ** article    
 *** :article:
   - [[https://pixelcluster.github.io/Mesa-26/][Inside Mesa 26.0's RADV RT improvements]]
@@ -63,7 +56,7 @@
   - [[https://desmolysium.com/vitality/#supplements][How I Biohack My Vitality - Desmolysium]]
   - [[https://blog.avas.space/you-can-stick-with-it/][you can stick with it]]
   - [[https://tugbakibar.pro/think-until-you-can-think-no-more-new/][think until you can think no more]]
-
+  - [[ https://12factor.net/][The twelve factor app]]
 ** blog    
 *** :blog:
   - [[https://lambdaland.org/][lambdaland.org]]
@@ -81,7 +74,7 @@
   - [[https://matt.might.net/articles/][Matt Might's blog]]
   - [[https://blog.dunossauro.com/][Dunossauro]]
   - [[https://tennojim.xyz/feed?include=ALL&exclude=NONE&page=0][tennojim]]
-  - [[http://blog.avas.space/feed][ava1's blog]]
+  - [[http://blog.avas.space/][ava1's blog]]
   - [[https://tilde.town/~vilmibm/][tilde - blog lindo]]
     
 ** screwdriver
@@ -93,6 +86,24 @@
 - [[https://0de5.net/explore][0DE5 Explore]]
 - [[https://fmhy.net/][freemediaheckyeah]]
 - [[https://rentry.co/good-sites#alternative-search-engines][/g/'s Good Sites]]
-
+  
 ** misc  
 *** :misc:
+
+
+
+
+** Para organizar
+- https://pt.wikipedia.org/wiki/Papagaio_estoc%C3%A1stico
+- https://youtu.be/LKtQ9p25ek0 (Fungi’s Resilience and Intelligence)
+- https://arstechnica.com/science/2026/07/when-the-ability-to-smell-goes-away/
+- https://www.scattered-thoughts.net/writing/im-not-a-cat/ (philosophy)
+- http://mutant-sounds.blogspot.com/2007/07/delia-derbyshire-barry-bermange-within.html (delia derbyshire - music)
+- https://en.wikipedia.org/wiki/Inventions_for_Radio#The_Dreams (delia derbyshire - music)
+- https://en.wikipedia.org/wiki/List_of_Latin_phrases_(full)
+- https://www.phoronix.com/news/Low-Latency-Layer (Anti-Lag 2)
+- https://github.com/Korthos-Software/low_latency_layer#testing-and-benchmarks (anti-lag 2)
+- https://www.reddit.com/r/linux_gaming/comments/1tfo731/opensource_low_latency_layer_brings_reflex/ (anti-lag 2)
+- https://jguer.space/blog/2026-06-15-yay-v13 (aur - apocalypse)
+- https://lelouch.dev/blog/you-are-probably-not-dumb/ (dumb)
+- https://kxptech.com/o-que-e-deploy
