@@ -12,3 +12,4 @@
 - [[https://hott.github.io/book/hott-ebook-13-g2e736d1.pdf][Homotopy Type Theory (PDF)]]
 - [[https://arxiv.org/pdf/1308.0729.pdf][Homotopy Type Theory - arXiv (PDF)]]
 - [[https://github.com/HoTT/book][HoTT/book - GitHub]]
+- https://gwern.net/doc/cs/algorithm/1982-perlis.pdf (Epigrams on Programming)
