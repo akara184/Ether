@@ -1,4 +1,5 @@
 
+
 #+TITLE: SOME RANDOM THOUGHTS ABOUT: 
 #+STARTUP: overview
 
@@ -36,11 +37,21 @@ cout << *ponteiro;     // Output: 100 (valor no endereço)n
 
 
 
-* Type Theory
+* Types
+** High order function
+
+- https://stackoverflow.com/questions/10141124/any-difference-between-first-class-function-and-high-order-function
+  Eu diria que uma High Order function algo mais abstrato para dizer que:
+  1. Função que recebe uma função.
+  2. Uma função que retorna uma função.
+  3. Uma função que recebe e retorna uma função.
+
 ** Some thoughts about curried function and high-order function
  - A *higher-order* function is simply a function that takes a function as an
    argument or returns a function as a result, and /it may or may not be curried/.
+   - A higher-order function is a function that either takes another function as an argument, returns a function, or does both.
  - A curried function, on the other hand, is one that /returns/ a function as its result
+   
 ** Some thoughts about \to
 A \to B 
 Existe uma função que transforma valores do tipo A
@@ -48,8 +59,25 @@ em valores do tipo B.
 
 ** Type checking vs Type matching
  - Eu diria que _Type Matching_ é muito mais que _Type Checking_.
-   
- 
+* Sistema Distribuídos
+
+- Existe _Kernel Thread_ e _User-Level Threads_
+  - Na criação deu ma thread é precisam ser resolvidos alguns aspectos:
+    1. Interface com programa (criar,esperar, etc)
+    2. Troca de contexto
+    3. Escalonamento
+    4. Sincronização
+    5. Sinais
+- Em computação, uma _troca de contexto_ é o processo de armazenar o estado de um processo ou thread, de forma que ele possa ser restaurado e a execução retomada posteriormente, e então restaurar um estado diferente, previamente salvo.
+- _SysCall_ função do sistema operacional que um programa pode chamar
+- _IPC_ tem dois modelos de comunicação: /Memória Compartilhada/ e /Troca de Mensagem/. Contém /Signals, Pipes e Sockets/. 
+
+
+Termos: Threads, Heterogêneos, Troca de Contexto, Estados de Processos(/Running, Ready, Waiting/), SysCall, IPC(/Interprocess Communication/), Signals, Pipes,Sockets
+
+
+Fontes: [[https://www.youtube.com/playlist?list=PLP0bYj2MTFcuXa4-EbBKhvehr-rkxpeR8][Curso_no_ytb]]
+
 
 * Random
 ** Relacionado ao vídeo Computer "Science - Brian Kernighan on successful language design":
@@ -57,6 +85,4 @@ em valores do tipo B.
     Ou seja, quanto tempo leva para você chegar no seu objetivo, se  para chegar no seu
     objetivo é extremamente longo e cansativo, talvez eficiência do programa não é boa
     
-    
-
 /Programmer efficiency is much more important than machine efficiency/

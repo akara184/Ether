@@ -1,0 +1,72 @@
+* Objetivo: 
+- After reading this book, you will be in a great position to determine which kinds of
+technologies are appropriate for which purposes and to understand how tools can
+be combined to form the foundation of a solid application architecture. You will
+develop a strong intuition for what your systems are doing under the hood so that
+you can reason about their behavior, make good design decisions, and track down
+any problems that may arise.
+
+* /Data-Intensive/ and /Compute-Intensive/
+We call an application data-intensive if data management is one of the primary
+challenges in developing the application. While in compute-intensive systems the
+challenge is parallelizing a very large computation.
+
+• Store data so that they, or another application, can find it again later (databases)
+• Remember the result of an expensive operation, to speed up reads (caches)
+• Allow users to search data by keyword or filter it in various ways (search indexes)
+• Handle events and data changes as soon as they occur (stream processing)
+• Periodically crunch a large amount of accumulated data (batch processing)
+* /Operational/ vs /Analytical Systems/
+• Operational systems consist of the backend services and data infrastructure where
+data is created—for example, by serving external users. Here, the application
+code both reads and modifies the data in its databases, based on the actions
+performed by the users.
+• Analytical systems serve the needs of business analysts and data scientists. They
+contain a read-only copy of the data from the operational systems, and they are
+optimized for the types of data processing that are needed for analytics.
+
+/ETL/ stands for *Extract, Transform, and Load.
+** OLTP and OLAP  
+  | Property            | Operational systems (OLTP)                      | Analytical systems (OLAP)                 |
+  |---------------------+-------------------------------------------------+-------------------------------------------|
+  | Main read pattern   | Point queries (fetch individual records by key) | Aggregate over large number of records    |
+  | Main write pattern  | Create, update, and delete individual records   | Bulk import (ETL) or event stream         |
+  | Human user example  | End user of web/mobile application              | Internal analyst, for decision support    |
+  | Machine use example | Checking if an action is authorized             | Detecting fraud/abuse patterns            |
+  | Type of queries     | Fixed, predefined by application                | Arbitrary, ad-hoc exploration by analysts |
+  | Query volume        | Lots of small queries                           | Few queries, each is complex              |
+  | Data represents     | Latest state of data (current point in time)    | History of events that happened over time |
+  | Dataset size        | Gigabytes to terabytes                          | Terabytes to petabytes                    |
+  
+** [[https://www.ibm.com/br-pt/think/topics/data-warehouse][Data Warehouse]]
+- In computing, a data warehouse, also known as an enterprise data warehouse, is a system used for reporting and data analysis and is a core component of business intelligence- The data warehouse contains a read-only copy of the data from all the various OLTP systems in the company. /Data is extracted from OLTP databases (using either a periodic data dump or a continuous stream of updates)/, transformed into an analysis-friendly schema, cleaned up, and then loaded into the data warehouse.
+  - This process of getting data into the data warehouse is known as [[https://aws.amazon.com/what-is/etl/][extract–transform–load (ETL)]]
+ - [[https://axial-sql.com/pt/compreendendo-o-htap-no-sql-server/][HTAP]]
+** a data lake: a centralized data:
+repository that holds a copy of any data that might be useful for analysis, obtained
+from operational systems via ETL processes
+** The sushi
+principle in data architecture and analytics states that "raw data is better than cooked data"
+** /Systems of record/ and /Derived data systems/
+_Systems of record_
+A system of record, also known as a source of truth, holds the authoritative or
+canonical version of data. When new data comes in—for example, as user input—
+it is first written here. Each fact is represented exactly once (the representation
+is typically normalized; see “Normalization, Denormalization, and Joins” on page
+72). If there is any discrepancy between another system and the system of record,
+the value in the system of record is (by definition) the correct one.
+
+_Derived data systems_
+Data in a derived system is the result of taking existing data from another system
+and transforming or processing it in some way. If you lose derived data, you
+can re-create it from the original source. A classic example is a cache: data can
+be served from the cache if present, but if the cache doesn’t contain what you
+need, you can fall back to the underlying database. Denormalized values, indexes,
+materialized views, transformed data representations, and models trained on a
+dataset also fall into this category.
+
+_Voz:_
+Então ele tá ditando que existe 2 formas principais de criação de dados:  
+
+1. Quando é um usuário cria algo, ou seja, quando os dados realmente são novos   
+2. Pego um dado que já existe em algum lugar, ou seja, já existe uns dados o sistemas, eu pego esses dados para criar outros dados. Se eu perder esses outros dados, eu por exemplo consigo recriar esses dados novamente, pois esses dados novos se originou de dados já existente
