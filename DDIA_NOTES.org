@@ -1,5 +1,5 @@
 * Objetivo: 
-- After reading this book, you will be in a great position to determine which kinds of
+After reading this book, you will be in a great position to determine which kinds of
 technologies are appropriate for which purposes and to understand how tools can
 be combined to form the foundation of a solid application architecture. You will
 develop a strong intuition for what your systems are doing under the hood so that
