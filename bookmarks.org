@@ -1,9 +1,11 @@
+#+STARTUP: overview
+
 * ytb
 - [[https://www.youtube.com/watch?v=y4SUfS9ymBU][How Enemies Detect You in Dark Souls: Part 2 - Smell]]
 - [[https://www.youtube.com/playlist?list=PL3XL6suc7Hp70kLZVUImSDYXd4GE_E8Ys][Introduction to Type Theory (playlist)]]
 - [[https://www.youtube.com/watch?v=psmu_VAuiag][Curried Functions]]
 - [[https://www.youtube.com/watch?v=TrYosPPCQAY][Type Theory in Computer Science, Linguistics, Logic]]
-- [[https://www.youtube.com/watch?v=AJ-yQEfvdVc&t=269s][Notes on type theory by Hannel]]
+- [[https://www.youtube.com/watch?v=AJ-yQEfvdVc&t=269s][Notes on type theory by Hanneli]]
 - [[https://www.youtube.com/watch?v=VxINoKFm-S4]["A Little Taste of Dependent Types"]]
 - [[https://www.youtube.com/watch?v=psvoT8LuBa4][why I'm writing an operating system + software as art]]
 - [[https://youtu.be/4_KgjfmoQgk][Viewer sent me a broken C64 board - Can I fix it?]]
@@ -38,11 +40,12 @@
 - [[https://youtu.be/Jes3bD6P0To?si=l8I6PRUN_-CM6CY7]["Tree-sitter - a new parsing system for programming tools" by Max Brunsfeld]]
 - [[https://youtu.be/23RghN4sHkM?si=NEQuO6RZmUNHaXNg][the ring, the great dark, and proximity to god - ethal cain]]
 - [[https://youtu.be/AF3XJT9YKpM?si=3mnec9XFRamAVI5X][Prof. Judy Fan: Cognitive Tools for Making the Invisible Visible]]
-- [[https://youtu.be/kK0K6bTdn5o?si=AlrEQqgg8dtc3uAw][Women’s Defense Units [YPG Press Office] (2016)]]
+- [[https://youtu.be/kK0K6bTdn5o?si=AlrEQqgg8dtc3uAw][Women’s Defense Units YPG Press Office] (2016)]]
 - [[https://youtu.be/QpBAfXyuLEM?si=luMzfUsLJQGDOjOO][The entire GTA SA story but CJ has schizophrenia]]
   
 * words
-- [[https://rona.substack.com/p/becoming-a-compiler-engineer][becoming a compiler engineer - substack]]
+- [[https://www.gov.br/ibc/pt-br/pesquisa-e-tecnologia/materiais-especializados-1/livros-em-braille-1/o-sistema-braille][Material sobre Braille]]
+- [[https://generalistprogrammer.com/tutorials/lambda-calculus-complete-guide][Lambda Calculus Explained: The Complete Guide (2026) < Actually good article lol]]
 - [[https://matt.might.net/articles/phd-school-in-pictures/][The illustrated guide to a Ph.D. - Matt]]
 - [[https://en.wikipedia.org/wiki/Mathematical_Platonims][Mathematical Platonism]]
 - [[https://batteryuniversity.com/article/bu-808-how-to-prolong-lithium-based-batteries/][BU-808: How to Prolong Lithium-based Batteries]]
