@@ -1,4 +1,7 @@
-* Goals: 
+#+STARTUP: overview
+
+* Chapter 01
+** Goals: 
 After reading this book, you will be in a great position to determine which kinds of
 technologies are appropriate for which purposes and to understand how tools can
 be combined to form the foundation of a solid application architecture. You will
@@ -6,7 +9,7 @@ develop a strong intuition for what your systems are doing under the hood so tha
 you can reason about their behavior, make good design decisions, and track down
 any problems that may arise.
 
-* /Data-Intensive/ and /Compute-Intensive/
+Y* /Data-Intensive/ and /Compute-Intensive/
 We call an application data-intensive if data management is one of the primary
 challenges in developing the application. While in compute-intensive systems the
 challenge is parallelizing a very large computation.
@@ -16,7 +19,7 @@ challenge is parallelizing a very large computation.
 • Allow users to search data by keyword or filter it in various ways (search indexes)
 • Handle events and data changes as soon as they occur (stream processing)
 • Periodically crunch a large amount of accumulated data (batch processing)
-* /Operational/ vs /Analytical Systems/
+Y* /Operational/ vs /Analytical Systems/
 • Operational systems consist of the backend services and data infrastructure where
 data is created—for example, by serving external users. Here, the application
 code both reads and modifies the data in its databases, based on the actions
@@ -45,7 +48,7 @@ optimized for the types of data processing that are needed for analytics.
 ** a data lake: a centralized data:
 repository that holds a copy of any data that might be useful for analysis, obtained
 from operational systems via ETL processes
-** The sushi
+** The [[https://www.datasapiens.co.uk/blog/the-sushi-principle][sushi]]
 principle in data architecture and analytics states that "raw data is better than cooked data"
 ** /Systems of record/ and /Derived data systems/
 _Systems of record_
@@ -70,3 +73,94 @@ Então ele tá ditando que existe 2 formas principais de criação de dados:
 
 1. Quando é um usuário cria algo, ou seja, quando os dados realmente são novos   
 2. Pego um dado que já existe em algum lugar, ou seja, já existe uns dados o sistemas, eu pego esses dados para criar outros dados. Se eu perder esses outros dados, eu por exemplo consigo recriar esses dados novamente, pois esses dados novos se originou de dados já existente
+
+Y* Cloud Native System Architecture
+Table 1-2. Examples of self-hosted and cloud native database systems
+| Category         | Self-hosted systems         | Cloud native systems                                                |
+|------------------+-----------------------------+---------------------------------------------------------------------|
+| Operational/OLTP | MySQL, PostgreSQL, MongoDB  | AWS Aurora [24], Azure SQL DB Hyperscale [25], Google Cloud Spanner |
+| Analytical/OLAP  | Teradata, ClickHouse, Spark | Snowflake [26], Google BigQuery, Azure Synapse Analytics            |
+
+Y* Distributed Versus Single-Node Systems
+- A system that involves several machines communicating via a network is called a
+distributed system. Each of the processes participating in a distributed system is called
+a node.
+** You might want to use this type of system for various reasons:
+*** Inherent distribution
+If an application involves two or more interacting users, each using their own
+device, then the system is unavoidably distributed: the communication between
+the devices will have to occur via a network.
+*** Requests between cloud services
+If data is stored in one service but processed in another, that data must be
+transferred over the network from one service to the other. Cloud native systems
+and microservices are therefore distributed.
+*** Fault tolerance/high availability
+If your application needs to continue working even if one machine (or several
+machines, or the network, or an entire datacenter) goes down, you can use
+multiple machines to give you redundancy. When one fails, another one can take
+over.
+*** Scalability
+If your data volume or computing requirements grow bigger than a single
+machine can handle, you can potentially spread the load across multiple
+machines.
+*** Latency
+If you have users around the world, you might want to have servers in various
+regions worldwide so that each user can be served from a server that is geograph‐
+ically close to them. That avoids the users having to wait for network packets
+to travel halfway around the world to answer their requests
+*** Elasticity
+If your application is busy at some times and idle at others, a cloud deployment
+can scale up or down to meet the demand so that you pay only for resources you
+are actively using. This is more difficult on a single machine, which needs to be
+provisioned to handle the maximum load, even at times when it is barely used.
+*** Specialized hardware
+Different parts of the system can take advantage of different types of hardware
+to match their workload. For example, an object store may use machines with
+many disks but few CPUs, whereas a data analysis system may use machines with
+lots of CPU and memory but no disks, and a machine learning system may use
+machines with GPUs (which are much more efficient than CPUs for training
+deep neural networks and other ML tasks).
+*** Legal compliance
+Some countries have data residency laws that require data about people in their
+jurisdiction to be stored and processed geographically within that country [40].
+The scope of these rules varies—for example, in some cases it applies only to
+medical or financial data, while other cases are broader. A service with users
+in several such jurisdictions will therefore have to distribute their data across
+servers in several locations.
+*** Sustainability
+If you have flexibility on where and when to run your jobs, you might be able
+to run them at a time and in a place where plenty of renewable electricity is
+available and avoid running them when the power grid is under strain. This can
+reduce your carbon emissions and allow you to take advantage of cheap power
+when it is available[
+** Problems with Distributed Systems:
+- Distributed systems also have downsides. Every request and API call that traverses
+the network needs to deal with the possibility of failure. The network may be interrupted,
+or the service may be overloaded or crash, and therefore any request may
+time out without receiving a response. In this case, we don’t know whether the service
+received the request, and simply retrying it might not be safe.
+
+- More nodes are not always faster; in some cases, a simple
+single-threaded program on one computer can perform significantly better than a cluster with over 100 CPU cores.
+
+** function as a service (FaaS)
+- Function as a Service (FaaS) is a cloud computing model that lets you run small,
+  modular code in response to events without managing any underlying servers
+Y* Data Systems Law and Society
+** The cost of a data
+- Everyone who works on such systems shares a responsibility for considering the
+ethical impact of their decisions and ensuring that they comply with relevant laws.
+
+- In general, we store data because we think that its value is greater than the costs of
+storing it. However, it is worth remembering that the costs of storage extend beyond
+the bill you pay for S3 or another service. The cost-benefit calculation should also
+take into account the risks of liability and reputational damage if the data were to
+be leaked or compromised by adversaries, and the risk of legal costs and fines if the
+storage and processing of the data is found not to be compliant with the law
+* Chapter 02
+** Case Study: Social Network Home Timelines
+- How can we do better? First, instead of polling, it would be better if the server actively pushed new posts to any followers who are currently online. Second, we should pre-compute the results of the query so that a user’s request for their home timeline can be served from a cache
+*** [[https://medium.com/@kevalrabadiya27/fan-out-architectures-in-system-design-scalability-through-smart-distribution-aff650202378][Fan-out]]
+- Fan-out refers to a design pattern where a single input or event leads to multiple outputs or actions.
+*** [[https://pt.wikipedia.org/wiki/Shard_(arquitetura_de_banco_de_dados)][shards]]
+- Um shard de banco de dados, em português fragmento de banco de dados, é uma partição horizontal de dados em um banco de dados ou mecanismo de busca. Cada partição individual é referenciada como um shard ou shard de banco de dados.

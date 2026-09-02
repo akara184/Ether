@@ -44,6 +44,8 @@
 - [[https://youtu.be/QpBAfXyuLEM?si=luMzfUsLJQGDOjOO][The entire GTA SA story but CJ has schizophrenia]]
   
 * words
+[[https://how.complexsystems.fail/][how complex system fails]]
+- [[https://linux-gaming.kwindu.eu/index.php/Improving_performance][gaming on linux]]
 - [[https://www.gov.br/ibc/pt-br/pesquisa-e-tecnologia/materiais-especializados-1/livros-em-braille-1/o-sistema-braille][Material sobre Braille]]
 - [[https://generalistprogrammer.com/tutorials/lambda-calculus-complete-guide][Lambda Calculus Explained: The Complete Guide (2026) < Actually good article lol]]
 - [[https://matt.might.net/articles/phd-school-in-pictures/][The illustrated guide to a Ph.D. - Matt]]

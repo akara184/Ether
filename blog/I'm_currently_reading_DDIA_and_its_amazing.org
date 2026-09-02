@@ -1,0 +1,7 @@
+I started reading the book called Designing Data-Intensive Applications (DDIA), being more precise, the second edition one.
+And... god... what a reading, I really enjoying reading this book because not only the writing is simple and well introduced,
+but also because the references in this book. what i mean about reference is each chapter, at the end, it has a references links. 
+those links are mostly article, papers, books about the topics, and i really enjoying reading the references. For the first time
+in my life, i jump into references and clicking on all of them. and happy to learn more about system design. So far i really enjoying the book, and im happy that my first
+reading is the second edition, it seems like the second edition is a modern one. im also taking note using emacs ORG-MODE, check
+the notes here on [buhtig](tab:https://github.com/akara184/Ether/blob/main/DDIA_NOTES.org)
