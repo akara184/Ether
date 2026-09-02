@@ -40,11 +40,12 @@
 - [[https://youtu.be/Jes3bD6P0To?si=l8I6PRUN_-CM6CY7]["Tree-sitter - a new parsing system for programming tools" by Max Brunsfeld]]
 - [[https://youtu.be/23RghN4sHkM?si=NEQuO6RZmUNHaXNg][the ring, the great dark, and proximity to god - ethal cain]]
 - [[https://youtu.be/AF3XJT9YKpM?si=3mnec9XFRamAVI5X][Prof. Judy Fan: Cognitive Tools for Making the Invisible Visible]]
-- [[https://youtu.be/kK0K6bTdn5o?si=AlrEQqgg8dtc3uAw][Women’s Defense Units YPG Press Office] (2016)]]
+- [[https://youtu.be/kK0K6bTdn5o?si=AlrEQqgg8dtc3uAw][Women’s Defense Units YPG Press Office (2016)]]
 - [[https://youtu.be/QpBAfXyuLEM?si=luMzfUsLJQGDOjOO][The entire GTA SA story but CJ has schizophrenia]]
   
 * words
-[[https://how.complexsystems.fail/][how complex system fails]]
+- [[https://jazco.dev/2025/02/19/imperfection/][When Imperfect Systems are Good, Actually: Bluesky's Lossy Timelines]]
+- [[https://how.complexsystems.fail/][how complex system fails]]
 - [[https://linux-gaming.kwindu.eu/index.php/Improving_performance][gaming on linux]]
 - [[https://www.gov.br/ibc/pt-br/pesquisa-e-tecnologia/materiais-especializados-1/livros-em-braille-1/o-sistema-braille][Material sobre Braille]]
 - [[https://generalistprogrammer.com/tutorials/lambda-calculus-complete-guide][Lambda Calculus Explained: The Complete Guide (2026) < Actually good article lol]]
